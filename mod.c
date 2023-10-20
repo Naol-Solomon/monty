@@ -16,14 +16,6 @@ void mod(stack_t **top, unsigned int number)
 		temp = temp->next;
 		count++;
 	}
-    if(temp->n == 0)
-    {
-        fprintf(stderr, "L%d: division by zero\n", number);
-        fclose(handle.filestream);
-        free(handle.container);
-        stack_free(*top);
-        exit(EXIT_FAILURE);
-    }
 	if (count < 2)
 	{
 		fprintf(stderr, "L%d: can't mod, stack too short\n", number);
@@ -32,6 +24,14 @@ void mod(stack_t **top, unsigned int number)
 		stack_free(*top);
 		exit(EXIT_FAILURE);
 	}
+    if(temp->n == 0)
+    {
+        fprintf(stderr, "L%d: division by zero\n", number);
+        fclose(handle.filestream);
+        free(handle.container);
+        stack_free(*top);
+        exit(EXIT_FAILURE);
+    }
 	num = temp->next->n % temp->n;
 	temp->next->n = num;
 	*top = temp->next;
