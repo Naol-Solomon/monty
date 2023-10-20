@@ -63,4 +63,12 @@ void add(stack_t **top, unsigned int number);
 void div_f(stack_t **top, unsigned int number);
 void mul(stack_t **top, unsigned int number);
 void sub(stack_t **top, unsigned int number);
+void mod(stack_t **top, unsigned int number);
+void pchar(stack_t **top, unsigned int number);
+void pstr(stack_t **top, unsigned int number);
+void queue(stack_t **top, unsigned int number);
+void addqueue(stack_t **top, int number);
+void rotl(stack_t **top,  __attribute__((unused)) unsigned int number);
+void rotr(stack_t **top, __attribute__((unused)) unsigned int number);
+void stack(stack_t **top, unsigned int number);
 #endif
