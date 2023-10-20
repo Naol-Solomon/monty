@@ -8,5 +8,5 @@
 void nop(stack_t **top, unsigned int number)
 {
     (void) number;
-    (void) *top;
+    (void) top;
 }

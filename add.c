@@ -24,7 +24,6 @@ void add(stack_t **top, unsigned int number)
 		stack_free(*top);
 		exit(EXIT_FAILURE);
 	}
-	temp = *top;
 	num = temp->n + temp->next->n;
 	temp->next->n = num;
 	*top = temp->next;
