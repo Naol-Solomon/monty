@@ -13,7 +13,7 @@ void pop(stack_t **top, unsigned int number)
     {
         stack_t *temp = NULL;
         temp = *top;
-        *top = (*top)->next;
+        *top = temp->next;
         free(temp);
     }
     

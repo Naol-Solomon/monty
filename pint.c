@@ -2,7 +2,7 @@
 /**
  * pint- print top most element of the stack
  * @top: pointer to the top element of the stack
- * number: address at which error occurred
+ * @number: address at which error occurred
  * Return: Nothing
 */
 void pint(stack_t **top, unsigned int number)
