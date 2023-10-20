@@ -11,7 +11,8 @@ int execute(char *container, stack_t **top, unsigned int number, FILE *filestrea
 {
 	instruction_t opst[] = {
 				{"push", push}, {"pall", pall}, {"pint", pint},
-				{"pop", pop},{"swap", swap}, {"add", add}, {"nop", nop}
+				{"pop", pop},{"swap", swap}, {"add", add}, {"nop", nop}, {"sub", sub}, 
+                {"mul", mul}, {"div_f", div_f}
 				};
 	unsigned int i = 0;
 	char *op;

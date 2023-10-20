@@ -60,4 +60,7 @@ int execute(char *container, stack_t **top, unsigned int number, FILE *filestrea
 void swap(stack_t **top, unsigned int number);
 void nop(stack_t **top, unsigned int number);
 void add(stack_t **top, unsigned int number);
+void div_f(stack_t **top, unsigned int number);
+void mul(stack_t **top, unsigned int number);
+void sub(stack_t **top, unsigned int number);
 #endif
