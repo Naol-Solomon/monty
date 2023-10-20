@@ -58,4 +58,6 @@ void stack_free(stack_t *top);
 int main(int argc, char *argv[]);
 int execute(char *container, stack_t **top, unsigned int number, FILE *filestream);
 void swap(stack_t **top, unsigned int number);
+void nop(stack_t **top, unsigned int number);
+void add(stack_t **top, unsigned int number);
 #endif
